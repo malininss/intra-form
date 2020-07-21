@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.css">
+</head>
+<body>
+  <form action="https://intra.1tv.ru/owa/flow/!prn_search.documents_prn" method="POST" name="frm_search">
+    <div class="form">
+      <div class="form__left-column form__columns">
+        <div class="form__item">
+          <label class="form__label form__item-title" for="dep_">
+            Департамент
+          </label>
+          <select data-placeholder="Выберите департамент" class="form__select livesearch" name="dep_" id="dep_">
+            <option class="form__option">
+            </option>
+            <option class="form__option" value="1">
+              Значение 1
+            </option>
+            <option class="form__option" value="2">
+              Значение 2
+            </option>
+          </select>
+        </div>
+        <div class="form__item">
+          <label class="form__label form__item-title" for="company_">
+            Контрагент
+          </label>
+          <select data-placeholder="Выберите контрагента"  class="form__select livesearch" name="company_" id="company_">
+            <option class="form__option">
+            </option>
+            <option class="form__option" value="1">
+              Значение 1
+            </option>
+          </select>
+        </div>
+        <div class="form__item">
+          <div class="form__item-title">
+            Окончание визирования
+          </div>
+          <div class="form__item-2-column-wrapper">
+            <div class="form__item-left-column form__item-columns">
+              <label class="form__label form__date-label" for="date1">c</label>
+              <input class="form__date" type="date" name="date1" id="date1"> 
+            </div>
+            <div class="form__item-right-column form__item-columns">
+              <label class="form__label form__date-label" for="date2">по</label>
+              <input class="form__date" type="date" name="date2" id="date2">
+            </div>
+          </div>
+        </div>
+        <div class="form__item">
+          <label class="form__label form__item-title" for="executor_">
+            Исполнитель
+          </label>
+          <select data-placeholder="Выберите исполнителя" class="form__select livesearch" name="executor_" id="executor_">
+            <option class="form__option" selected>
+              
+            </option>
+            <option class="form__option" value="1">
+              Значение 1
+            </option>
+          </select>
+        </div>
+        <div class="form__item form__checkbox-block">
+          <div class="form__item-2-column-wrapper">
+            <div class="form__item-left-column form__item-columns">
+              <label class="form__label form__date-label" for="has_internet">Интернет:</label>
+              <input class="form__checkbox-input" type="checkbox" name="has_internet" id="has_internet" value="1"><br>
+            </div>
+            <div class="form__item-right-column form__item-columns">
+              <label class="form__label form__date-label" for="has_telecast_to3">Сублицензирование:</label>
+              <input class="form__checkbox-input" type="checkbox" name="has_telecast_to3" id="has_telecast_to3" value="1">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form__right-column form__columns">
+        <div class="form__item">
+          <div class="form__item-title">
+            Диапазон поставок
+          </div>
+          <div class="form__item-2-column-wrapper">
+            <div class="form__item-left-column form__item-columns">
+              <label class="form__label form__date-label" for="dated1">c</label>
+              <input class="form__date" type="date" name="dated1" id="dated1">
+            </div>
+            <div class="form__item-right-column form__item-columns">
+              <label class="form__label form__date-label" for="dated2">по</label>
+              <input class="form__date" type="date" name="dated2" id="dated2">
+            </div>
+          </div>
+        </div>
+        <div class="form__item">
+          <div class="form__item-3-column-wrapper">
+            <div class="form__item-3-column-elem">
+              <label for="num" class="form__item-title form__label">№ договора</label>
+              <input type="number" name="num" id="num">
+            </div>
+            <div class="form__item-3-column-elem">
+              <label for="dated" class="form__item-title form__label">Дата договора</label>
+              <input class="form__date" type="date" name="dated" id="dated">
+            </div>
+            <div class="form__item-3-column-elem">
+              <label for="cond" class="form__item-title form__label">Состояние</label>
+              
+              <select  class="form__select livesearch" name="cond" id="cond">
+                <option selected>
+                  Значение стандарт
+                </option>
+                <option value="1">
+                  Значение 1
+                </option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="form__item">
+          <div class="form__item-2-column-wrapper">
+            <div class="form__item-left-column form__item-columns form__item-select-columns">
+              <label class="form__label form__item-title" for="cat">Категория договора</label>
+              <select data-placeholder="Выберите категорию" class="form__select livesearch" name="cat" id="cat">
+                <option>
+                </option>
+                <option value="1">
+                  Значение 1
+                </option>
+              </select>
+            </div>
+            <div class="form__item-right-column form__item-columns form__item-select-columns">
+              <label class="form__label form__item-title" for="type_">Тип договора</label>
+              <select data-placeholder="Выберите тип" class="form__select livesearch" name="type_" id="type_">
+                <option>
+                </option>
+                <option value="1">
+                  Значение 1
+                </option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="form__item"></div>
+          <label class="form__label form__item-title" for="rname">
+            Название АВП
+          </label>
+          <input type="text" name="rname" id="rname">
+        </div>
+        <div class="form__item">
+          <label class="form__label form__item-title" for="doc_theme_18">
+            Предмет договора
+          </label>
+          <select data-placeholder="Выберите предмет" class="form__select livesearch" name="doc_theme_18" id="doc_theme_18">
+            <option class="form__option">
+            </option>
+            <option class="form__option" value="1">
+              Значение 1
+            </option>
+            <option class="form__option" value="2">
+              Значение 2
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div>
+      <label for="btn">
+        <span class="btn">Найти отчет</span>
+        <input class="form__submit-btn" type="submit" name="action" id="btn-submit" hidden value="Найти отчет">
+      </label>
+      <label for="btn-reset">
+        <span class="btn-reset">Очистить форму</span>
+        <input class="form__rest-btn" type="reset" id="btn-reset" value="Очистить форму" hidden>
+      </label>
+    </div>
+  </form>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
+  <script type="text/javascript">
+    $(".livesearch").chosen();
+  </script>
+</body>
+</html>
