@@ -107,10 +107,8 @@
             </div>
             <div class="form__item-3-column-elem">
               <label for="cond" class="form__item-title form__label">Состояние</label>
-              
-              <select  class="form__select livesearch" name="cond" id="cond">
-                <option selected>
-                  Значение стандарт
+              <select data-placeholder="Выберите состояние" class="form__select livesearch" name="cond" id="cond">
+                <option>
                 </option>
                 <option value="1">
                   Значение 1
@@ -181,6 +179,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
   <script type="text/javascript">
     $(".livesearch").chosen();
+    $(".btn-reset").click(() => {
+      $(".livesearch").val('').trigger("chosen:updated");
+    });
   </script>
 </body>
 </html>

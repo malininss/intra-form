@@ -89,12 +89,12 @@ form {
 }
 
 .form__item {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .form__item-title {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 }
 
 .form__item-2-column-wrapper {
@@ -146,7 +146,7 @@ form {
 }
 
 .form__item-3-column-elem {
-  width: 33.333%;
+  width: 31%;
 }
 
 .form__item-3-column-elem:not(:last-child) {
