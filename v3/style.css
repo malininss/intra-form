@@ -17,6 +17,13 @@
   border-bottom: 1px solid #dcdcdc;
 }
 
+.chosen-container-active .chosen-single,
+.chosen-container-single .chosen-single,
+.chosen-container-active.chosen-with-drop .chosen-single {
+  box-shadow: none !important;
+  background: #fff !important;
+}
+
 body {
   background-color: #d3dbe8;
 }
@@ -234,8 +241,6 @@ form {
           align-items: center;
   padding: 0 10px;
   margin-right: 10px;
-  -webkit-box-shadow: 2px -4px 6px -1px rgba(0, 0, 0, 0.08);
-          box-shadow: 2px -4px 6px -1px rgba(0, 0, 0, 0.08);
   color: #000;
   text-decoration: none;
   border-radius: 10px 4px 0 0;
