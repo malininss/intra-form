@@ -44,7 +44,7 @@ input:focus {
   width: auto;
   color: #fff;
   border-radius: 8px;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .btn:hover {
@@ -119,12 +119,12 @@ form {
   cursor: pointer;
 }
 
-/* .form__checkbox-block {
-  margin-bottom: 40px;
-} */
+.form__checkbox-block {
+  margin-bottom: 0;
+}
 
 .form__checkbox-block .form__item-columns {
-  width: 32%;
+  width: 40%;
 }
 
 .form__checkbox-input {
@@ -158,5 +158,8 @@ form {
 }
 
 .buttons-wrapper {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
   padding: 0 20px;
 }
