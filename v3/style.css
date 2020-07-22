@@ -17,9 +17,8 @@
   border-bottom: 1px solid #dcdcdc;
 }
 
-
 body {
-  background-color: #ebf3f5;
+  background-color: #d3dbe8;
 }
 
 label {
@@ -198,4 +197,60 @@ form {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 20px;
+}
+
+.tabs {
+  height: 26px;
+  font-size: 12px;
+  background-color: #efefef;
+  border-bottom: 1px solid lightgrey;
+}
+
+.tabs__wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-top: 5px;
+}
+
+.tabs__elem {
+  background-color: #e5e9ef;
+  border: 1px solid lightgrey;
+  border-bottom: none;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+  margin-right: 10px;
+  -webkit-box-shadow: 2px -4px 6px -1px rgba(0, 0, 0, 0.08);
+          box-shadow: 2px -4px 6px -1px rgba(0, 0, 0, 0.08);
+  color: #000;
+  text-decoration: none;
+  border-radius: 10px 4px 0 0;
+}
+
+.tabs__elem:last-child {
+  margin-right: 20px;
+}
+
+.tabs__elem_active {
+  color: #fff;
+  background: #82aaca;
+}
+
+.tabs__elem:hover {
+  background: #0757a8;
+  color: #fff;
 }
