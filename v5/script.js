@@ -36,13 +36,15 @@ const renderOptionsHtml = (obj) => {
 
 
 referToJson = () => {
-  fetch('json.json', {
+  fetch('https://malininss.github.io/intra-form/v5/json.json', {
     method: 'get'
   }).then( response => {
     return response.json()
   }).then( json  => {
     jsonValues = json;
-  })
+  }).catch(e => {
+    console.log('Error: ' + e);
+  });
 }
 
 referToJson();
