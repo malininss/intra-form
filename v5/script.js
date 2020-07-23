@@ -4,15 +4,17 @@ const docTheme = document.querySelector('#doc_theme');
 
 let jsonValues;
 
-docTypeCustomSelect.addEventListener('click', () => {
-  if (jsonValues[docType.value]) {
-    const nameFordocTheme = jsonValues[docType.value][0];
-    docTheme.innerHTML = renderOptionsHtml(jsonValues[docType.value]);
-    docTheme.name = nameFordocTheme;
-    docTheme.disabled = false;
-  } else {
-    docTheme.innerHTML = ''
-    docTheme.disabled = true;
+docTypeCustomSelect.addEventListener('click', (e) => {
+  if (e.target.classList.contains('active-result')) {
+    if (jsonValues[docType.value]) {
+      const nameFordocTheme = jsonValues[docType.value][0];
+      docTheme.innerHTML = renderOptionsHtml(jsonValues[docType.value]);
+      docTheme.name = nameFordocTheme;
+      docTheme.disabled = false;
+    } else {
+      docTheme.innerHTML = ''
+      docTheme.disabled = true;
+    }
   }
 })
 
