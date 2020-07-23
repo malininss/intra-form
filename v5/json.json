@@ -1,0 +1,29 @@
+{
+  "value1": [
+    "selectNameForPredmet5",
+    {
+      "value": "99значение",
+      "value2": "2значение2",
+      "value3": "3значение3",
+      "value4": "4значение4"
+    }
+  ],
+  "value2": [
+    "selectNameForPredmet10",
+    {
+      "v5alue": "5значение",
+      "v5alue2": "6значение2",
+      "v5alue3": "7значение3",
+      "v5alue4": "8значение4"
+    }
+  ],
+  "value3": [
+    "selectNameForPredmet20",
+    {
+      "v2alue": "1значение",
+      "v2alue2": "1значение2",
+      "v2alue3": "1значение3",
+      "v2alue4": "1значение4"
+    }
+  ]
+}
