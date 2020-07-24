@@ -36,7 +36,7 @@ const renderOptionsHtml = (obj) => {
 
 
 referToJson = () => {
-  fetch('https://malininss.github.io/intra-form/v5/json.json', {
+  fetch('https://intra.1tv.ru/owa/flow/!home_new.get_json_form_search', {
     method: 'get'
   }).then( response => {
     return response.json()
