@@ -87,6 +87,18 @@ input, .form__standart-select {
           box-sizing: border-box;
 }
 
+.form__standart-select {
+  color: #999;
+}
+
+.form__standart-select option {
+  color: black;
+}
+
+.form__standart-select-placeholder {
+  color: #999 !important;
+}
+
 input:focus {
   border: 1px solid #5897fb;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);

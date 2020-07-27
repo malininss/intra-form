@@ -3,9 +3,18 @@ const docTypeCustomSelect = document.querySelector('#type_');
 const docTheme = document.querySelector('#doc_theme');
 const docThemeWrapper = document.querySelector('#doc_theme_wrap');
 
+const standartSelects = document.querySelectorAll('.form__standart-select');
+
+standartSelects.forEach(item => {
+  item.addEventListener('change', () => {
+    item.style.color = '#000';
+  });
+});
+
 let jsonValues;
 
 docTypeCustomSelect.addEventListener('change', (e) => {
+  
     if (jsonValues[docType.value] && Object.keys(jsonValues[docType.value][1]).length !== 0) {
       const nameFordocTheme = jsonValues[docType.value][0];
       docTheme.innerHTML = renderOptionsHtml(jsonValues[docType.value]);
@@ -38,7 +47,6 @@ const renderOptionsHtml = (obj) => {
 
 referToJson = () => {
   fetch('https://intra.1tv.ru/owa/flow/!home_new.get_json_form_search', {
-  // fetch('json.json', {
     method: 'get'
   }).then( response => {
     return response.json()
@@ -50,3 +58,4 @@ referToJson = () => {
 }
 
 referToJson();
+
