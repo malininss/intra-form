@@ -46,7 +46,8 @@ const renderOptionsHtml = (obj) => {
 
 
 referToJson = () => {
-  fetch('https://intra.1tv.ru/owa/flow/!home_new.get_json_form_search', {
+  fetch('json.json', {
+  // fetch('https://intra.1tv.ru/owa/flow/!home_new.get_json_form_search', {
     method: 'get'
   }).then( response => {
     return response.json()

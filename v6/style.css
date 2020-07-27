@@ -91,8 +91,12 @@ input, .form__standart-select {
   color: #999;
 }
 
+#doc_theme {
+  color: #000;
+}
+
 .form__standart-select option {
-  color: black;
+  color: #000;
 }
 
 .form__standart-select-placeholder {
@@ -106,13 +110,21 @@ input:focus {
 }
 
 .btn, .btn-reset {
+  box-sizing: border-box;
+  cursor: pointer;
   font-size: 14px;
   display: inline-block;
-  padding: 5px 20px;
+  padding: 0 20px 2px 20px;
   background: #207ac2;
   width: auto;
   color: #fff;
   border-radius: 8px;
+  border: none;
+}
+
+.btn:focus {
+  box-shadow: none;
+  border: none;
 }
 
 .btn:hover {
