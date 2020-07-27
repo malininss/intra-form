@@ -280,8 +280,8 @@ form {
 }
 
 .tabs__wrapper {
-  max-width: 1000px;
-  margin: 0 auto;
+  /* max-width: 1000px;
+  margin: 0 auto; */
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -312,9 +312,9 @@ form {
   border-radius: 10px 4px 0 0;
 }
 
-.tabs__elem:last-child {
+/* .tabs__elem:last-child {
   margin-right: 20px;
-}
+} */
 
 .tabs__elem_active {
   color: #fff;
