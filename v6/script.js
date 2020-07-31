@@ -1,4 +1,7 @@
 const docType = document.querySelector('#type_');
+
+console.log(docType);
+
 const docTypeCustomSelect = document.querySelector('#type_');
 const docTheme = document.querySelector('#doc_theme');
 const docThemeWrapper = document.querySelector('#doc_theme_wrap');

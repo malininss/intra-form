@@ -9,20 +9,37 @@
 </head>
 <body>
   <div class="tabs">
+
     <div class="tabs__wrapper">
-      <a href="https://intra.1tv.ru/owa/flow/home_dev.status" class="tabs__elem">
-        Главное меню
-      </a>
-      <a href="https://intra.1tv.ru/owa/flow/home_dev.departments" class="tabs__elem">
-        Подразделения
-      </a>
-      <a href="https://intra.1tv.ru/owa/flow/home_dev.viza" class="tabs__elem">
-        Визирование
-      </a>
-      <a href="/" class="tabs__elem tabs__elem_active">
-        Поиск
-      </a>
+
+      <div class="tabs__warning">
+        <a href="https://intra.1tv.ru/owa/flow/home_dev.status" class="tabs__elem tabs__elem_warning">
+          Документов в стоп-листе: 12 шт.
+        </a>
+        <a href="https://intra.1tv.ru/owa/flow/home_dev.departments" class="tabs__elem tabs__elem_warning">
+          Нет актов: 50 шт.
+        </a>
+      </div>
+
+      <div class="tabs__menu">
+        <a href="https://intra.1tv.ru/owa/flow/home_dev.status" class="tabs__elem">
+          Главное меню
+        </a>
+        <a href="https://intra.1tv.ru/owa/flow/home_dev.departments" class="tabs__elem">
+          Подразделения
+        </a>
+        <a href="https://intra.1tv.ru/owa/flow/home_dev.viza" class="tabs__elem">
+          Визирование
+        </a>
+        <a href="/" class="tabs__elem tabs__elem_active">
+          Поиск
+        </a>
+      </div>
+
+
     </div>
+
+
   </div>
   <form action="https://intra.1tv.ru/owa/flow/!prn_search.documents_prn" method="POST" name="frm_search">
     <div class="form">
