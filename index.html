@@ -30,7 +30,7 @@
           <label class="form__label form__item-title" for="company_">
             Контрагент
           </label>
-          <select data-placeholder="Выберите контрагента"  class="form__select livesearch" name="company_" id="company_">
+          <select data-placeholder="Выберите контрагента"  class="form__select test livesearch" name="company_" id="company_">
             <option class="form__option">
             </option>
             <option class="form__option" value="1">
@@ -180,7 +180,7 @@
   <script type="text/javascript">
     $(".livesearch").chosen();
     $(".btn-reset").click(() => {
-      $(".livesearch").val('').trigger("chosen:updated");
+      $(".test").val('').trigger("chosen:updated");
     });
   </script>
 </body>
