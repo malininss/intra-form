@@ -12,10 +12,6 @@ const showСloseButton = () => {
 
   livesearchItems.forEach(item => {
   
-    item.addEventListener('change', () => {
-      console.log('aaa');
-    })
-  
     const formItem = item.closest('.form__item');
     const resetButton = document.createElement('div');
     resetButton.classList.add('chosen-container__reset-btn');
@@ -43,16 +39,18 @@ const showСloseButton = () => {
 }
 
 
-standartSelects.forEach(item => {
-  item.addEventListener('change', () => {
-    item.style.color = '#000';
+if (standartSelects) {
+  standartSelects.forEach(item => {
+    item.addEventListener('change', () => {
+      item.style.color = '#000';
+    });
   });
-});
-
+}
 
 let jsonValues;
 
-docTypeCustomSelect.addEventListener('change', (e) => {
+if (docTypeCustomSelect) {
+  docTypeCustomSelect.addEventListener('change', (e) => {
   
     if (jsonValues[docType.value] && Object.keys(jsonValues[docType.value][1]).length !== 0) {
       const nameFordocTheme = jsonValues[docType.value][0];
@@ -65,7 +63,8 @@ docTypeCustomSelect.addEventListener('change', (e) => {
       docThemeWrapper.classList.add('form__standart-select-non-active');
       docTheme.disabled = true;
     }
-});
+  });
+}
 
 const renderOptionsHtml = (obj) => {
   optionsObj = obj[1];
@@ -97,5 +96,8 @@ referToJson = () => {
   });
 }
 
-referToJson();
+if (docTypeCustomSelect) {
+  referToJson();
+}
+
 showСloseButton();
