@@ -194,6 +194,14 @@ input:focus {
   background: #9fb6ca;
 }
 
+.btn-1 {
+  background-color: #5aa4e0;
+}
+
+.btn-2 {
+  background-color: #348bd2;
+}
+
 form {
   padding: 10px 20px;
   max-width: 1000px;
@@ -339,6 +347,14 @@ form {
   padding: 0 20px;
 }
 
+.buttons-wrapper_right {
+  justify-content: flex-end;
+}
+
+.buttons-wrapper_right .btn {
+  margin-left: 10px;
+}
+
 .tabs {
   height: 26px;
   font-size: 12px;
@@ -417,4 +433,24 @@ form {
 .tabs__elem_warning:hover {
   background-color: #a91d1d;
   border-color: #a91d1d;
+}
+
+/* .top-dropdown + .chosen-container {
+  
+} */
+
+.top-dropdown + .chosen-container .chosen-results {
+  position: absolute;
+  bottom: 28px;
+  width: calc(100% + 2px);
+  left: -1px;
+  background-color: #fff;
+  max-height: 120px !important;
+  border: 1px solid #aaa;
+  border-bottom: none;
+}
+
+.chosen-container .chosen-results li.no-results {
+  background-color: inherit !important;
+  color: red !important;
 }
