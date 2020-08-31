@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="windows-1251">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Система учета договоров - Поиск</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://intra.1tv.ru/resources/intra-form/css/chosen.css">
+</head>
+<body>
+<FORM ACTION="!prn_pkvs.pkvs_prn" METHOD="POST" TARGET="bottom_frame" name="find_">
+<div class="form">
+<div class="form__left-column form__columns">
+<div class="form__item">
+<label class="form__label form__item-title" for="rname">Название</label>
+<input type="text" name="rname" id="rname">
+</div>
+<div class="form__item">
+<label class="form__label form__item-title" for="company_">Дата эфира</label>
+<div class="form__select-wrapper_2row">
+<input class="form__date" type="date" name="dated" id="dated">
+</div>
+</div>
+<div class="form__item">
+<div class="form__item-title">Сублицензирование</div>
+<div class="form__select-wrapper_3row form__standart-select-wrapper">
+<SELECT NAME="telecast_to3" class="form__select form__standart-select" id="telecast_to3">
+<OPTION value="" class="form__option form__standart-select-placeholder" selected>Выберите сублицензирование
+<OPTION value=2 class="form__option">Нет.
+</option>
+<OPTION value=6 class="form__option">Нет, но ком.исп. возможно по отд. соглашению.
+</option>
+<OPTION value=1 class="form__option">Разрешено
+</option>
+<OPTION value=4 class="form__option">Разрешено, с доп. отчислениями.
+</option>
+<OPTION value=5 class="form__option">Разрешено, с доп. отчислениями и ограничениями.
+</option>
+<OPTION value=3 class="form__option">Разрешено, с ограничениями.
+</option>
+</SELECT>
+</div>
+</div>
+</div>
+<div class="form__right-column form__columns">
+<div class="form__item">
+<label class="form__label form__item-title" for="dep_">Дирекция</label>
+<div class="form__select-wrapper_3row">
+<SELECT NAME="dep_" data-placeholder="Выберите дирекцию" class="form__select livesearch test" id="dep_"><OPTION SELECTED class="form__option"></option><OPTION value="542" class="form__option">Аппарат Генерального директора</option><OPTION value="453" class="form__option">Библиотека прав Первого канала</option><OPTION value="151" class="form__option">Бухгалтерия</option><OPTION value="5079" class="form__option">Дирекция Главного продюсера музыкальных и развлекательных программ</option><OPTION value="430" class="form__option">Дирекция главного режиссера</option><OPTION value="441" class="form__option">Дирекция детского вещния (архив)</option><OPTION value="440" class="form__option">Дирекция дневного вещания (архив)</option><OPTION value="137" class="form__option">Дирекция документального кино</option><OPTION value="414" class="form__option">Дирекция интернет-вещания</option><OPTION value="5077" class="form__option">Дирекция информационных программ</option><OPTION value="5078" class="form__option">Дирекция кинопоказа</option><OPTION value="389" class="form__option">Дирекция кинопостпродакшн</option><OPTION value="435" class="form__option">Дирекция кинопроизводства</option><OPTION value="508" class="form__option">Дирекция креативного планирования</option><OPTION value="491" class="form__option">Дирекция креативного планирования и интернет-вещания</option><OPTION value="492" class="form__option">Дирекция маркетинга</option><OPTION value="474" class="form__option">Дирекция международных связей</option><OPTION value="136" class="form__option">Дирекция научно-популярных программ</option><OPTION value="5081" class="form__option">Дирекция общественно-политического вещания</option><OPTION value="5082" class="form__option">Дирекция общественных связей</option><OPTION value="498" class="form__option">Дирекция общественных связей и интернет-вещания</option><OPTION value="5076" class="form__option">Дирекция ОРТ - Дизайн</option><OPTION value="5083" class="form__option">Дирекция оформления эфира</option><OPTION value="5084" class="form__option">Дирекция планирования и финансирования</option><OPTION value="408" class="form__option">Дирекция планирования программ</option><OPTION value="5085" class="form__option">Дирекция по рекламе</option><OPTION value="5075" class="form__option">Дирекция программ</option><OPTION value="5087" class="form__option">Дирекция сетей распространения программ</option><OPTION value="481" class="form__option">Дирекция социальных и публицистических программ</option><OPTION value="517" class="form__option">Дирекция спецпроектов</option><OPTION value="5088" class="form__option">Дирекция спортивного вещания</option><OPTION value="135" class="form__option">Дирекция стратегических исследований телеаудитории</option><OPTION value="5089" class="form__option">Дирекция утреннего телеканала</option><OPTION value="5090" class="form__option">Дирекция художественных, развлекательных и просветительских программ (архив)</option><OPTION value="5091" class="form__option">Коммерческая дирекция</option><OPTION value="388" class="form__option">Организационно-производственный отдел</option><OPTION value="402" class="form__option">ОРТ-Видео</option><OPTION value="149" class="form__option">Отдел технического развития Службы Генерального Продюсера</option><OPTION value="472" class="form__option">Партнеры</option><OPTION value="425" class="form__option">Первый канал. Всемирная сеть</option><OPTION value="148" class="form__option">Первый отдел</option><OPTION value="280" class="form__option">Производственный отдел (инвалиды)</option><OPTION value="5093" class="form__option">Руководство</option><OPTION value="5096" class="form__option">Служба безопасности</option><OPTION value="527" class="form__option">Служба внутреннего аудита</option><OPTION value="5094" class="form__option">Служба Генерального директора</option><OPTION value="5095" class="form__option">Служба Генерального продюсера</option><OPTION value="529" class="form__option">Служба стратегических проектов</option><OPTION value="146" class="form__option">Студия спецпроектов</option><OPTION value="183" class="form__option">Техническое управление</option><OPTION value="5097" class="form__option">Управление делами</option><OPTION value="5098" class="form__option">Юридическая служба</option></SELECT>
+</div>
+</div>
+<div class="form__item">
+<div class="form__item-title">Диапазон поставок</div>
+<div class="form__item-2-column-wrapper">
+<div class="form__item-left-column form__item-columns">
+<label class="form__label form__date-label" for="date1">c</label>
+<input class="form__date" type="date" name="date1" id="date1">
+</div>
+<div class="form__item-right-column form__item-columns">
+<label class="form__label form__date-label" for="date2">по</label>
+<input class="form__date" type="date" name="date2" id="date2">
+</div>
+</div>
+</div>
+<div class="form__item">
+<div class="form__item-2-column-wrapper">
+<div class="form__item-left-column form__item-columns form__item-select-columns">
+<label for="num" class="form__item-title form__label">№ договора</label>
+<input type="text" name="num" id="num">
+</div>
+<div class="form__item-right-column form__item-columns form__item-select-columns">
+<label for="dated_doc" class="form__item-title form__label">Дата договора</label>
+<input class="form__date" type="date" name="dated_doc" id="dated_doc">
+</div>
+</div>
+</div>
+</div>
+<div class="form__right-column form__columns">
+<div class="form__item">
+<div class="form__item-title">Тип телепередачи</div>
+<div class="form__select-wrapper_3row">
+<SELECT NAME="film_format" data-placeholder="Выберите тип телепередачи" class="form__select livesearch test" id="film_format"><OPTION SELECTED class="form__option"></option><OPTION value="6" class="form__option">Заставка</option><OPTION value="23" class="form__option">Информационная программа</option><OPTION value="1" class="form__option">Информационно-аналитическая программа</option><OPTION value="5" class="form__option">Информационно-развлекательная программа</option><OPTION value="9" class="form__option">Кино</option><OPTION value="14" class="form__option">Музыкальная программа</option><OPTION value="11" class="form__option">Общественно-политическая программа</option><OPTION value="16" class="form__option">Познавательная программа</option><OPTION value="21" class="form__option">Программа для детей и юношества</option><OPTION value="3" class="form__option">Программа о спорте</option><OPTION value="26" class="form__option">Программа-анонс лучших телепередач ПК</option><OPTION value="10" class="form__option">Публицистика</option><OPTION value="22" class="form__option">Развлекательная программа</option><OPTION value="17" class="form__option">Религиозная программа</option><OPTION value="27" class="form__option">Трансляция спортивного мероприятия </option><OPTION value="8" class="form__option">Юмористическая программа</option></SELECT>
+</div>
+</div>
+<div class="form__item">
+<div class="form__item-title">Тематика</div>
+<div class="form__select-wrapper_3row">
+<SELECT NAME="film_tematika" data-placeholder="Выберите тематику" class="form__select livesearch test" id="film_tematika"><OPTION SELECTED class="form__option"></option><OPTION value="9" class="form__option">Военно-патриотическая</option><OPTION value="22" class="form__option">Искусство</option><OPTION value="20" class="form__option">История</option><OPTION value="41" class="form__option">Кино</option><OPTION value="8" class="form__option">Кино. Фильм о фильме</option><OPTION value="1" class="form__option">Концерт праздничный</option><OPTION value="3" class="form__option">Концерт-компиляция</option><OPTION value="2" class="form__option">Концерт-конкурс</option><OPTION value="25" class="form__option">Кулинария</option><OPTION value="23" class="form__option">Культура</option><OPTION value="19" class="form__option">Медицина. Здоровье.</option><OPTION value="11" class="form__option">Международные отношения</option><OPTION value="17" class="form__option">Наука и техника</option><OPTION value="21" class="form__option">О знаменитостях</option><OPTION value="13" class="form__option">Правовые вопросы</option><OPTION value="14" class="form__option">Природа</option><OPTION value="15" class="form__option">Путешествия</option><OPTION value="18" class="form__option">Религия</option><OPTION value="10" class="form__option">Социальная направленность</option><OPTION value="27" class="form__option">Спорт</option><OPTION value="36" class="form__option">Спорт. Биатлон</option><OPTION value="33" class="form__option">Спорт. Бокс</option><OPTION value="38" class="form__option">Спорт. Лёгкая атлетика</option><OPTION value="35" class="form__option">Спорт. Лыжи</option><OPTION value="39" class="form__option">Спорт. Лыжи горные</option><OPTION value="37" class="form__option">Спорт. Теннис</option><OPTION value="40" class="form__option">Спорт. Фигурное катание</option><OPTION value="32" class="form__option">Спорт. Футбол</option><OPTION value="34" class="form__option">Спорт. Хоккей</option><OPTION value="28" class="form__option">Спорт экстремальный и трюки</option><OPTION value="4" class="form__option">Творческий вечер</option><OPTION value="16" class="form__option">Цивилизация и страноведение</option><OPTION value="24" class="form__option">Цирк</option><OPTION value="12" class="form__option">Экономика</option></SELECT>
+</div>
+</div>
+<div class="form__item">
+<div class="form__item-title">Жанр</div>
+<div class="form__select-wrapper_3row">
+<SELECT NAME="film_genre" data-placeholder="Выберите жанр" class="form__select livesearch top-dropdown" id="film_genre"><OPTION SELECTED class="form__option"></option><OPTION value="38" class="form__option">Авторская программа</option><OPTION value="30" class="form__option">Видеоклип</option><OPTION value="5" class="form__option">Документальное кино</option><OPTION value="6" class="form__option">Игра</option><OPTION value="24" class="form__option">Концерт</option><OPTION value="17" class="form__option">Мультсериал</option><OPTION value="12" class="form__option">Мультфильм</option><OPTION value="35" class="form__option">Мультфильм полнометражный</option><OPTION value="29" class="form__option">Реалити-шоу</option><OPTION value="16" class="form__option">Телесериал</option><OPTION value="21" class="form__option">Телефильм</option><OPTION value="39" class="form__option">Телефильм музыкальный</option><OPTION value="8" class="form__option">Ток-шоу</option><OPTION value="37" class="form__option">Трансляция</option><OPTION value="1" class="form__option">Фильм-балет</option><OPTION value="22" class="form__option">Фильм-концерт</option><OPTION value="36" class="form__option">Фильм-спектакль</option><OPTION value="2" class="form__option">Художественный многосерийный фильм</option><OPTION value="7" class="form__option">Художественный музыкальный фильм</option><OPTION value="13" class="form__option">Художественный фильм</option><OPTION value="15" class="form__option">Церемония вручения премии</option><OPTION value="20" class="form__option">Шоу</option><OPTION value="14" class="form__option">Шоу цирковое</option></SELECT>
+</div>
+</div>
+</div>
+</div>
+<div class="buttons-wrapper buttons-wrapper_right">
+<label for="btn">
+<input class="btn btn-1" type="submit" name="action" id="btn-submit" value="Все данные">
+</label>
+<label for="btn">
+<input class="btn btn-2" type="submit" name="action" id="btn-submit" value="Выбор">
+</label>
+<label for="btn">
+<input class="btn btn-3" type="submit" name="action" id="btn-submit" value="Сформировать текстовый запрос">
+</label>
+</div>
+</form>
+<script src="https://intra.1tv.ru/resources/intra-form/js/jquery.min.js"></script>
+<script src="https://intra.1tv.ru/resources/intra-form/js/chosen.jquery.min.js"></script>
+ <script type="text/javascript">
+$(".livesearch").chosen();
+</script>
+<script src="https://intra.1tv.ru/resources/intra-form/js/script.js"></script>
+</body>
+</html>
