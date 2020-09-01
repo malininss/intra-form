@@ -4,8 +4,12 @@ if (document.cookie.indexOf('hight-contrast=true') !== -1) {
   document.body.classList.add('hight-contrast');
 }
 
+const tabsContainer = document.querySelector('.tabs');
+const colorSwitcherElement = document.createElement('div');
+colorSwitcherElement.classList.add('color-switcher');
 
-const colorSwitcherElement = document.querySelector('.color-switcher');
+tabsContainer.prepend(colorSwitcherElement);
+
 colorSwitcherElement.addEventListener('click', () => {
   document.body.classList.toggle('hight-contrast');
 
@@ -14,13 +18,7 @@ colorSwitcherElement.addEventListener('click', () => {
   } else {
     document.cookie = "hight-contrast=false";
   }
-  console.log(document.cookie);
 });
-
-
-
-
-
 
 
 const docType = document.querySelector('#type_');
@@ -109,8 +107,8 @@ const renderOptionsHtml = (obj) => {
 
 
 referToJson = () => {
-  // fetch('https://intra.1tv.ru/owa/flow/!home_new.get_json_form_search', {
-  fetch('json.json', {
+  fetch('https://intra.1tv.ru/owa/flow/!home_new.get_json_form_search', {
+  // fetch('json.json', {
     method: 'get'
   }).then( response => {
     return response.json()
