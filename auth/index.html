@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.css">
+</head>
+<body>
+  <form class="auth-form" action="https://intra.1tv.ru/owa/flow/!prn_search.documents_prn" method="POST" name="frm_search">
+    <div class="form auth-form__container auth-form__login-alert">
+      <div class="auth-form__wrapper">
+        <div class="auth-form__logo">
+          <img src="1logo.png" alt="">
+        </div>
+        <div class="auth-form__title">
+          Авторизация
+        </div>
+
+        <div class="auth-form__alert">
+          Действие вашего пароль истекло, введите новый
+        </div>
+
+        <div class="form__item">
+          <label class="form__label form__item-title" for="name">
+            Логин
+          </label>
+
+          <!-- Чтобы показать предупреждение, input'у ниже нужно добавить класс auth-form__item_alert-->
+          <input required class="auth-form__item" type="text" name="name" id="name" placeholder="Логин не введен">
+        </div>
+
+        <div class="form__item">
+          <label class="form__label form__item-title" for="password">
+            Пароль
+          </label>
+          <input required class="auth-form__item" type="password" name="password" id="password" placeholder="Пароль не введен">
+        </div>
+
+        <div class="auth-form__forget-password">
+          <a href="#">Забыли пароль?</a>
+        </div>
+
+        <label for="btn">
+          <input class="btn" type="submit" name="action" id="btn-submit" value="Войти">
+        </label>
+      </div>
+    </div>
+  </form>
+</body>
+</html>
