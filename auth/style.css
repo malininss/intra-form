@@ -127,7 +127,7 @@ select {
   top: 3px;
   height: 20px;
   width: 20px;
-  background: url(https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen-sprite.png) no-repeat 4px 0px;
+  background: url(chosen-sprite.png) no-repeat 4px 0px;
   background-color: #fff;
 }
 
@@ -313,6 +313,11 @@ form {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  justify-content: space-between;
+}
+
+.form__item-3-column-wrapper .form__item-columns{
+  width: calc(33% - 10px);
 }
 
 .form__item-3-column-elem:nth-child(1) {
@@ -369,7 +374,6 @@ form {
   font-size: 12px;
   background-color: #f5f5f5;
   position: relative;
-  /* border-bottom: 1px solid lightgrey; */
 }
 
 .tabs__wrapper {
@@ -480,7 +484,6 @@ form {
   transform: rotate(180deg);
 }
 
-
 .auth-form {
   max-width: inherit;
   min-width: 350px;
@@ -547,4 +550,3 @@ form {
   margin: 0 auto;
   margin-top: 20px
 }
-
